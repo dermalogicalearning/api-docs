@@ -1,14 +1,11 @@
-# API SPEC
+# DLA API Specifications
 
-The following API endpoints will be used to integrate class registration information between the Dermalogica Learning App (DLA) and Dermalogica's legacy education systems (V2 in the US, and DES in subsidiary markets).
+The following API endpoints will be used to integrate class registration information between DLA and our legacy education systems (V2, DES).
 
 DLA will offer features for both online learning and conventional learning in the classroom. As such, the API will need to reflect class bookings from both concepts.
 
-Notes:
 
-All calls are made using POST method. Using GET method will return 405 status.
-
-All endpoints that accept JSON data return the following in case JSON is invalid:
+All calls are made using POST method. Using GET method will return 405 status. All endpoints that accept JSON data return the following in case JSON is invalid:
 
 HTTP status 400
 
@@ -20,7 +17,7 @@ HTTP status 400
 
 # Classes
 
-## Create class
+## Create class -- this should be called whenever a new Class is created in V2 or DES
 
 `POST /api/create-class/`
 
@@ -93,7 +90,7 @@ HTTP status 422
 }
 ```
 
-## Update class
+## Update class -- this should be called whenever a Class is updated in V2 or DES.
 
 `POST /api/update-class/EXTERNAL_CLASS_ID/`
 
@@ -317,7 +314,7 @@ HTTP status 422
 }
 ```
 
-## Update cohort
+## Update cohort -- this should be called whenever a Class_Schedule or Workshop Instance is updated.
 
 `POST /api/update-cohort/EXTERNAL_COHORT_ID/`
 
@@ -421,7 +418,7 @@ HTTP status 404
 }
 ```
 
-## Delete cohort
+## Delete cohort -- this should be called whenever a Class Instance is deleted.
 
 `POST /api/delete-cohort/EXTERNAL_CLASS_ID/`
 
@@ -446,7 +443,7 @@ HTTP status 404
 ```
 
 
-# Enrollments
+# Enrollments -- this should be called whever a student registers for a Class.
 
 ## Enroll student in class
 
