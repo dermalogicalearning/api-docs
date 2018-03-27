@@ -156,9 +156,9 @@ HTTP status 404
 }
 ```
 
-## Delete class
+## Deactivate class
 
-`POST /api/delete-class/EXTERNAL_CLASS_ID/`
+`POST /api/deactivate-class/EXTERNAL_CLASS_ID/`
 
 #### Response for success
 
@@ -166,7 +166,7 @@ HTTP status 200
 
 ``` json
 {
-	"message": "deleted"
+	"message": "deactivated"
 }
 ```
 
