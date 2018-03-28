@@ -523,6 +523,12 @@ HTTP status 422
             "code":"required"
         }
     ],
+    "external_registration_id":[
+        {
+            "message":"This field is required.",
+            "code":"required"
+        }
+    ],    
     "email":[
         {
             "message":"This field is required.",
