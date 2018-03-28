@@ -466,7 +466,7 @@ HTTP status 404
 
 Notes:
 
-Fields external_cohort_id and external_registration_id are optional.
+Field external_cohort_id is optional.
 
 If external_cohort_id is given, user will be enrolled into specified cohort.
 
@@ -551,3 +551,64 @@ HTTP status 404
 	"message": "Class with given external ID not found."
 }
 ```
+
+
+
+
+
+## Remove student from a class
+
+`POST /api/remove-student-from-class/`
+
+#### JSON params:
+
+``` json
+{
+	"external_registration_id": "11223344"
+}
+```
+
+
+#### Response for success
+
+HTTP status 200
+
+``` json
+{
+	"message": "removed"
+}
+```
+
+#### Response for missing data
+
+HTTP status 422
+
+
+``` json
+{
+	"external_registration_id": [
+		{
+			"message": "This field is required.",
+			"code": "required"
+		}
+	]
+}
+```
+
+#### Response for unknown/unavailable registration id
+
+HTTP status 404
+
+``` json
+{
+	"message": "Registration with given external ID not found."
+}
+```
+
+
+
+
+
+
+
+
