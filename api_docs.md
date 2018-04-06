@@ -420,7 +420,7 @@ HTTP status 404
 
 ## Delete cohort -- this should be called whenever a Class Instance is deleted.
 
-`POST /api/delete-cohort/EXTERNAL_CLASS_ID/`
+`POST /api/delete-cohort/EXTERNAL_COHORT_ID/`
 
 #### Response for success
 
