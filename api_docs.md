@@ -199,7 +199,6 @@ Please note that the concept of Cohort is a one-to-one with the Class_Schedule t
 	"external_instructor_first_name": "fname",
 	"external_instructor_last_name": "lname",
 	"external_instructor_email": "fname.lname@example.com",
-	"external_instructor_mobile": "1234567890",
 	"start_date": "11/11/2017 08:00:00",
 	"end_date": "11/11/2017 17:30:00",
 	"name": "cohort name"
@@ -238,12 +237,6 @@ HTTP status 422
 		}
 	],
 	"external_instructor_profile_id": [
-		{
-			"message": "This field is required.",
-			"code": "required"
-		}
-	],
-	"external_instructor_mobile": [
 		{
 			"message": "This field is required.",
 			"code": "required"
@@ -326,7 +319,6 @@ HTTP status 422
 	"external_instructor_first_name": "fname",
 	"external_instructor_last_name": "lname",
 	"external_instructor_email": "fname.lname@example.com",
-	"external_instructor_mobile": "1234567890",
 	"start_date": "11/11/2017 09:30:00",
 	"end_date": "11/11/2017 18:45:00",
 	"name": "cohort name updated"
@@ -358,12 +350,6 @@ HTTP status 422
 ``` json
 {
 	"external_instructor_profile_id": [
-		{
-			"message": "This field is required.",
-			"code": "required"
-		}
-	],
-	"external_instructor_mobile": [
 		{
 			"message": "This field is required.",
 			"code": "required"
