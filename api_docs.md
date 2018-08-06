@@ -445,7 +445,7 @@ HTTP status 404
 	"first_name": "fname",
 	"last_name": "lname",
 	"email": "fname.lname@example.com",
-	"mobile": "1234567890",
+	"mobile": "1234567890",					 	// This field is now optional
 	"external_registration_id": "11223344"
 }
 ```
@@ -486,12 +486,6 @@ HTTP status 422
         }
     ],
     "last_name":[
-        {
-            "message":"This field is required.",
-            "code":"required"
-        }
-    ],
-    "mobile":[
         {
             "message":"This field is required.",
             "code":"required"
